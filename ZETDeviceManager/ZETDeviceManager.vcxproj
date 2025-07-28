@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA6EDD72-2C74-4BE0-AA3D-5E0E1FA4B1CE}</ProjectGuid>
+    <RootNamespace>ZETDeviceManager</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)'=='11.0'" Label="Configuration">
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_WIN32_WINNT=0x0601;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(BoostIncludeDir);$(ZetHeadersDir);$(ZetLibsDir);$(ZetToolsDir);$(ZetToolsDir)TrendWriter\;$(ZetToolsDir)WaterMark\;$(ZetToolsDir)Dialog_ZET</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BrowseInformation>false</BrowseInformation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(BoostLibDir);$(ZetLibsDir);$(ZetLibsDir)SPI;$(ZetLibsDir)ZETFile\bin\Win32;$(ZetLibsDir)ZetTools\bin\Win32;$(ZetLibsDir)Intel\ipp\ia32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>uxtheme.lib;zadc.lib;libMPSSE.lib;ZetFileD.lib;Rpcrt4.lib;zetipp.lib;ZetToolsD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MinimumRequiredVersion>$(MinWinVersion)</MinimumRequiredVersion>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_WIN32_WINNT=0x0601;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(BoostIncludeDir);$(ZetHeadersDir);$(ZetLibsDir);$(ZetToolsDir);$(ZetToolsDir)TrendWriter\;$(ZetToolsDir)WaterMark\</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <BrowseInformation>false</BrowseInformation>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(BoostLibDir);$(ZetLibsDir);$(ZetLibsDir)SPI;$(ZetLibsDir)ZETFile\bin\Win32;$(ZetLibsDir)ZetTools\bin\Win32;$(ZetLibsDir)Intel\ipp\ia32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>uxtheme.lib;zadc.lib;ZetFile.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MinimumRequiredVersion>$(MinWinVersion)</MinimumRequiredVersion>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <PreserveSBR>true</PreserveSBR>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="resource\icons\7xxx-18.ico" />
+    <None Include="resource\icons\7xxx.ico" />
+    <None Include="resource\icons\batch.ico" />
+    <None Include="resource\icons\blinked-off-18.ico" />
+    <None Include="resource\icons\blinked-off.ico" />
+    <None Include="resource\icons\blinked-on-18.ico" />
+    <None Include="resource\icons\blinked-on.ico" />
+    <None Include="resource\icons\channel-disabled.ico" />
+    <None Include="resource\icons\channel-enabled.ico" />
+    <None Include="resource\icons\channel-icp.ico" />
+    <None Include="resource\icons\channel-disabled-18.ico" />
+    <None Include="resource\icons\channel-enabled-18.ico" />
+    <None Include="resource\icons\channel-icp-18.ico" />
+    <None Include="resource\icons\clipboard-copy.ico" />
+    <None Include="resource\icons\clipboard-paste.ico" />
+    <None Include="resource\icons\clipboard_toolbar.bmp" />
+    <None Include="resource\icons\demo-18.ico" />
+    <None Include="resource\icons\demo.bmp" />
+    <None Include="resource\icons\demo.ico" />
+    <None Include="resource\icons\detail.ico" />
+    <None Include="resource\icons\ethernet.ico" />
+    <None Include="resource\icons\ethernet-18.ico" />
+    <None Include="resource\icons\help.ico" />
+    <None Include="resource\icons\lock.ico" />
+    <None Include="resource\icons\main.ico" />
+    <None Include="resource\icons\main_toolbar.bmp" />
+    <None Include="resource\icons\pci.ico" />
+    <None Include="resource\icons\pci-18.ico" />
+    <None Include="resource\icons\properties.ico" />
+    <None Include="resource\icons\refresh.ico" />
+    <None Include="resource\icons\save.ico" />
+    <None Include="resource\icons\sensors.ico" />
+    <None Include="resource\icons\srAddStartTime.bmp" />
+    <None Include="resource\icons\srClearStartTime.bmp" />
+    <None Include="resource\icons\sr_copy_pc_to_sd.ico" />
+    <None Include="resource\icons\sr_copy_sd_to_pc.ico" />
+    <None Include="resource\icons\sr_sync.ico" />
+    <None Include="resource\icons\usb.ico" />
+    <None Include="resource\icons\usb-18.ico" />
+    <None Include="resource\icons\wizard.ico" />
+    <None Include="resource\icons\zet017_u2.bmp" />
+    <None Include="resource\icons\zet017_u8.bmp" />
+    <None Include="resource\icons\zet110.bmp" />
+    <None Include="resource\icons\zet210.bmp" />
+    <None Include="resource\icons\zet220.bmp" />
+    <None Include="resource\icons\zet230.bmp" />
+    <None Include="resource\icons\zet240.bmp" />
+    <None Include="resource\icons\zet_controller.bmp" />
+    <None Include="resource\icons\zet_sensor.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ZetHeadersDir)CALIBR.h" />
+    <ClInclude Include="$(ZetHeadersDir)NEW_CHREC.h" />
+    <ClInclude Include="$(ZetLibsDir)ZETFile\include\ZETFile.h" />
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\Channel.h" />
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\CommonWriter.h" />
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\DescriptorFileHelper.h" />
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\DeviceInfoParcer.h" />
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\DriveChecker.h" />
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\FileHelper.h" />
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\SingleTrendWriter.h" />
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\SingleWriter.h" />
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\StreamTrendWriter.h" />
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\TrendWriter.h" />
+    <ClInclude Include="$(ZetToolsDir)WaterMark\CRC.h" />
+    <ClInclude Include="$(ZetToolsDir)WaterMark\MappingOpener.h" />
+    <ClInclude Include="$(ZetToolsDir)WaterMark\WaterMarkFloat.h" />
+    <ClInclude Include="$(ZetToolsDir)WaterMark\WatermarkInt.h" />
+    <ClInclude Include="$(ZetToolsDir)WaterMark\WMAligner.h" />
+    <ClInclude Include="$(ZetToolsDir)WaterMark\WMInfo.h" />
+    <ClInclude Include="$(ZetToolsDir)Dialog_ZET\Translate.h" />
+    <ClInclude Include="$(ZetToolsDir)ZETView_basic_class\CDSRV.h" />
+    <ClInclude Include="$(ZetToolsDir)Controls\CEditBase\CEditBase.h" />
+    <ClInclude Include="$(ZetToolsDir)Controls\SpinEdit\SpinEdit.h" />
+    <ClInclude Include="$(ZetToolsDir)Dialog_ZET\CDZetPath.h" />
+    <ClInclude Include="$(ZetToolsDir)Dialog_ZET\OnHelp.h" />
+    <ClInclude Include="$(ZetToolsDir)FunctionApplication\FunctionApplication.h" />
+    <ClInclude Include="$(ZetToolsDir)Common_exe_ocx\FunctionForAll.h" />
+    <ClInclude Include="$(ZetToolsDir)7xxxXmlWorker\XMLWorker.h" />
+    <ClInclude Include="$(ZetToolsDir)WndResizer\WndResizer.h" />
+    <ClInclude Include="$(ZetToolsDir)NamedPipes\Client\zetPipeClient.h" />
+    <ClInclude Include="$(ZetToolsDir)Dialog_ZET\DataTime.h" />
+    <ClInclude Include="$(ZetToolsDir)Grafic1\gdiplustextdispctrl1.h" />
+    <ClInclude Include="$(ZetToolsDir)ZetThread\CustomThreadSRV.h" />
+    <ClInclude Include="$(ZetToolsDir)ZetThread\CustomZetThread.h" />
+    <ClInclude Include="$(ZetToolsDir)ZetThread\ThreadSRVmultiSelfS.h" />
+    <ClInclude Include="$(ZetToolsDir)md5\md5.h" />
+    <ClInclude Include="CFGWorker.h" />
+    <ClInclude Include="source\algo\7xxx\7xxx\device\stream_data_work\stream_data_worker.h" />
+    <ClInclude Include="source\algo\std\sd\sd_std.hpp" />
+    <ClInclude Include="source\algo\utils\base64\base64.hpp" />
+    <ClInclude Include="source\algo\utils\md5\md5.hpp" />
+    <ClInclude Include="source\algo\utils\pair_hash\pair_hash.hpp" />
+    <ClInclude Include="source\algo\utils\recorder\recorder.hpp" />
+    <ClInclude Include="source\algo\utils\teds\teds.h" />
+    <ClInclude Include="source\algo\utils\zet139_dev_detect\zet139_dev_detect.hpp" />
+    <ClInclude Include="source\algo\utils\zsp_dev_detect\zsp_dev_detect.hpp" />
+    <ClInclude Include="source\algo\zsp_factory\zsp_common.hpp" />
+    <ClInclude Include="source\algo\zsp_factory\zsp_config\zsp_channel\zsp_channel.h" />
+    <ClInclude Include="source\algo\zsp_factory\zsp_config\zsp_config.h" />
+    <ClInclude Include="source\algo\zsp_factory\zsp_config\zsp_device\zsp_device.h" />
+    <ClInclude Include="source\algo\zsp_factory\zsp_config\zsp_metadata\zsp_metadata.h" />
+    <ClInclude Include="source\algo\zsp_factory\zsp_config\zsp_state\zsp_state.h" />
+    <ClInclude Include="source\algo\zsp_factory\zsp_factory.h" />
+    <ClInclude Include="source\GUI\properties\properties_dlg_base.h" />
+    <ClInclude Include="source\GUI\properties\properties_dlg_common.h" />
+    <ClInclude Include="source\GUI\properties\properties_dlg_zet037.h" />
+    <ClInclude Include="source\GUI\tabs\mseed_metadata\mseed_metadata_tab.h" />
+    <ClInclude Include="source\GUI\tabs\registrator_zsp\registrator_zsp_tab.h" />
+    <ClInclude Include="source\GUI\tabs\selftest\selftest_tab.h" />
+    <ClInclude Include="source\GUI\tabs\zet037_tenso_channel\zet037_tenso_channel_tab.h" />
+    <ClInclude Include="source\GUI\tenso\tenso_dlg\tenso_dlg.h" />
+    <ClInclude Include="source\GUI\tenso\tenso_icp_dlg\tenso_icp_dlg.h" />
+    <ClInclude Include="source\GUI\waitForm\WaitFormDlg.h" />
+    <ClInclude Include="StructForCfgFile.h" />
+    <ClInclude Include="MyException.h" />
+    <ClInclude Include="resource\Phrases.h" />
+    <ClInclude Include="source\algo\forcopyfromsdtopc\COMMAND_INFO_USB.h" />
+    <ClInclude Include="source\algo\forcopyfromsdtopc\FileHandler.h" />
+    <ClInclude Include="source\algo\forcopyfromsdtopc\FlashFileInfo.h" />
+    <ClInclude Include="source\algo\forcopyfromsdtopc\NewStruct.h" />
+    <ClInclude Include="source\algo\forcopyfromsdtopc\OldWMInfo.h" />
+    <ClInclude Include="resource\resource.h" />
+    <ClInclude Include="source\algo\7xxx\7xxx\crawler\crawler_7xxx.hpp" />
+    <ClInclude Include="source\algo\7xxx\7xxx\device\config\config_7xxx.hpp" />
+    <ClInclude Include="source\algo\7xxx\7xxx\device\device_7xxx.hpp" />
+    <ClInclude Include="source\algo\utils\bin\bin.hpp" />
+    <ClInclude Include="source\algo\utils\bytes_conv\bytes_conv.hpp" />
+    <ClInclude Include="source\algo\utils\clipboard\clipboard.hpp" />
+    <ClInclude Include="source\algo\crawler\crawler.hpp" />
+    <ClInclude Include="source\algo\crawler\crawler_interface.hpp" />
+    <ClInclude Include="source\algo\factory\factory.hpp" />
+    <ClInclude Include="source\algo\memento\memento.hpp" />
+    <ClInclude Include="source\algo\object\object.hpp" />
+    <ClInclude Include="source\algo\object\object_type.hpp" />
+    <ClInclude Include="source\algo\path\path.h" />
+    <ClInclude Include="source\algo\saver\saver.hpp" />
+    <ClInclude Include="source\algo\sensors\sensors.hpp" />
+    <ClInclude Include="source\algo\std\channel\channel.hpp" />
+    <ClInclude Include="source\algo\std\crawler\crawler_std.hpp" />
+    <ClInclude Include="source\algo\std\device\blinker\blinker.hpp" />
+    <ClInclude Include="source\algo\std\device\device_std.hpp" />
+    <ClInclude Include="source\algo\utils\align_value\align_value.hpp" />
+    <ClInclude Include="source\algo\utils\double_bubble_sort\double_bubble_sort.hpp" />
+    <ClInclude Include="source\algo\utils\hex\hex.hpp" />
+    <ClInclude Include="source\algo\utils\mac_conv\mac_conv.hpp" />
+    <ClInclude Include="source\algo\utils\shield_access\shield_access.hpp" />
+    <ClInclude Include="source\algo\utils\string_conv\string_conv.hpp" />
+    <ClInclude Include="source\algo\utils\time_conv\time_conv.hpp" />
+    <ClInclude Include="source\GUI\config\ConfigDlg.h" />
+    <ClInclude Include="source\GUI\progressctrlex\ProgressCtrlEx.h" />
+    <ClInclude Include="source\GUI\tabs\actuator\actuator_tab.h" />
+    <ClInclude Include="source\GUI\tabs\description\description_tab.h" />
+    <ClInclude Include="source\GUI\tabs\internal_DAC\InternalDACDC_Tab.h" />
+    <ClInclude Include="source\GUI\tabs\internal_DAC\InternalDACPPS_Tab.h" />
+    <ClInclude Include="source\GUI\tabs\internal_DAC\InternalDACSin_Tab.h" />
+    <ClInclude Include="source\GUI\tabs\registrator_zet048\registrator_zet048_tab.h" />
+    <ClInclude Include="source\GUI\tabs\standalone_registrator\SRChoiseProfDlg\SRChoiseProfDlg.h" />
+    <ClInclude Include="source\GUI\tabs\standalone_registrator\SRDataPropDlg\SRDataPropDlg.h" />
+    <ClInclude Include="source\GUI\tabs\standalone_registrator\SRWritePropDlg\SRWritePropDlg.h" />
+    <ClInclude Include="source\GUI\tabs\standalone_registrator\stanRegDeviceParam.h" />
+    <ClInclude Include="source\GUI\tabs\sync\grayable_groupbox\grayable_groupbox.h" />
+    <ClInclude Include="source\GUI\user_messages.hpp" />
+    <ClInclude Include="source\GUI\tabs\calibration\grid_holder\grid_holder.h" />
+    <ClInclude Include="source\GUI\tabs\calibration\grid\grid.h" />
+    <ClInclude Include="source\gui\horscale\horscale.h" />
+    <ClInclude Include="source\gui\main\list\list.h" />
+    <ClInclude Include="source\gui\listctrl\listsensors.h" />
+    <ClInclude Include="source\gui\main\toolbar\main_toolbar.h" />
+    <ClInclude Include="source\gui\main\tree\tree.h" />
+    <ClInclude Include="source\GUI\properties\toolbar\clipboard_toolbar.h" />
+    <ClInclude Include="source\GUI\settings\SettingsDlg.h" />
+    <ClInclude Include="source\GUI\tabs\7xxx\7xxx_tab.h" />
+    <ClInclude Include="source\GUI\tabs\7xxx\list\listparams.h" />
+    <ClInclude Include="source\GUI\tabs\calibration\calibration_tab.h" />
+    <ClInclude Include="source\GUI\tabs\calibration\table\table.h" />
+    <ClInclude Include="source\gui\tabs\channel\channel_tab.h" />
+    <ClInclude Include="source\gui\tabs\common\common_tab.h" />
+    <ClInclude Include="source\gui\tabs\default_tab.h" />
+    <ClInclude Include="source\GUI\tabs\dig_port\check_groupbox\check_groupbox.h" />
+    <ClInclude Include="source\gui\tabs\dig_port\digport_tab.h" />
+    <ClInclude Include="source\gui\tabs\frequency\frequency_tab.h" />
+    <ClInclude Include="source\gui\tabs\ip_address\ipaddress_tab.h" />
+    <ClInclude Include="source\gui\tabs\sync\sync_tab.h" />
+    <ClInclude Include="source\gui\tabs\tabs.h" />
+    <ClInclude Include="source\gui\sensors\SensorsDlg.h" />
+    <ClInclude Include="source\GUI\wizard\pages\reuse_page\reuse_page.h" />
+    <ClInclude Include="source\GUI\wizard\pages\start_page\start_page.h" />
+    <ClInclude Include="source\GUI\wizard\WizardSheet.h" />
+    <ClInclude Include="source\types.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="source\application\application.h" />
+    <ClInclude Include="source\gui\main\main_dlg.h" />
+    <ClInclude Include="СTreeForCompare.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\Channel.cpp" />
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\CommonWriter.cpp" />
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\DescriptorFileHelper.cpp" />
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\DeviceInfoParcer.cpp" />
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\DriveChecker.cpp" />
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\FileHelper.cpp" />
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\SingleTrendWriter.cpp" />
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\SingleWriter.cpp" />
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\StreamTrendWriter.cpp" />
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\TrendWriter.cpp" />
+    <ClCompile Include="$(ZetToolsDir)WaterMark\CRC.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)WaterMark\WaterMarkFloat.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)WaterMark\WatermarkInt.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)Dialog_ZET\Translate.cpp" />
+    <ClCompile Include="$(ZetToolsDir)ZETView_basic_class\CDSRV.cpp" />
+    <ClCompile Include="$(ZetToolsDir)Controls\CEditBase\CEditBase.cpp" />
+    <ClCompile Include="$(ZetToolsDir)Controls\SpinEdit\SpinEdit.cpp" />
+    <ClCompile Include="$(ZetToolsDir)Dialog_ZET\CDZetPath.cpp" />
+    <ClCompile Include="$(ZetToolsDir)Dialog_ZET\OnHelp.cpp" />
+    <ClCompile Include="$(ZetToolsDir)FunctionApplication\FunctionApplication.cpp" />
+    <ClCompile Include="$(ZetToolsDir)7xxxXmlWorker\XMLWorker.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)WndResizer\WndResizer.cpp" />
+    <ClCompile Include="$(ZetToolsDir)Common_exe_ocx\FunctionForAll.cpp" />
+    <ClCompile Include="$(ZetToolsDir)NamedPipes\Client\ZETPipeClient.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)Dialog_ZET\DataTime.cpp" />
+    <ClCompile Include="$(ZetToolsDir)Grafic1\gdiplustextdispctrl1.cpp" />
+    <ClCompile Include="$(ZetToolsDir)ZetThread\CustomThreadSRV.cpp" />
+    <ClCompile Include="$(ZetToolsDir)ZetThread\CustomZetThread.cpp" />
+    <ClCompile Include="$(ZetToolsDir)ZetThread\ThreadSRVmultiSelfS.cpp" />
+    <ClCompile Include="$(ZetToolsDir)md5\md5.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CFGWorker.cpp" />
+    <ClCompile Include="source\algo\7xxx\7xxx\crawler\crawler_7xxx.cpp" />
+    <ClCompile Include="source\algo\7xxx\7xxx\device\config\config_7xxx.cpp" />
+    <ClCompile Include="source\algo\7xxx\7xxx\device\device_7xxx.cpp" />
+    <ClCompile Include="source\algo\7xxx\7xxx\device\stream_data_work\stream_data_worker.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\algo\crawler\crawler.cpp" />
+    <ClCompile Include="source\algo\factory\factory.cpp" />
+    <ClCompile Include="source\algo\object\object.cpp" />
+    <ClCompile Include="source\algo\path\path.cpp" />
+    <ClCompile Include="source\algo\saver\saver.cpp" />
+    <ClCompile Include="source\algo\sensors\sensors.cpp" />
+    <ClCompile Include="source\algo\std\channel\chan.cpp" />
+    <ClCompile Include="source\algo\std\crawler\crawler_std.cpp" />
+    <ClCompile Include="source\algo\std\device\blinker\blinker.cpp" />
+    <ClCompile Include="source\algo\std\device\device_std.cpp" />
+    <ClCompile Include="source\algo\std\sd\sd_std.cpp" />
+    <ClCompile Include="source\algo\utils\teds\teds.cpp" />
+    <ClCompile Include="source\algo\zsp_factory\zsp_config\zsp_channel\zsp_channel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\algo\zsp_factory\zsp_config\zsp_config.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\algo\zsp_factory\zsp_config\zsp_device\zsp_device.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\algo\zsp_factory\zsp_config\zsp_metadata\zsp_metadata.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\algo\zsp_factory\zsp_config\zsp_state\zsp_state.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\algo\zsp_factory\zsp_factory.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\GUI\config\ConfigDlg.cpp" />
+    <ClCompile Include="source\GUI\progressctrlex\ProgressCtrlEx.cpp" />
+    <ClCompile Include="source\GUI\properties\properties_dlg_base.cpp" />
+    <ClCompile Include="source\GUI\properties\properties_dlg_common.cpp" />
+    <ClCompile Include="source\GUI\properties\properties_dlg_zet037.cpp" />
+    <ClCompile Include="source\GUI\tabs\actuator\actuator_tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\calibration\grid\grid.cpp" />
+    <ClCompile Include="source\gui\horscale\horscale.cpp" />
+    <ClCompile Include="source\gui\main\list\list.cpp" />
+    <ClCompile Include="source\gui\main\toolbar\main_toolbar.cpp" />
+    <ClCompile Include="source\gui\main\tree\tree.cpp" />
+    <ClCompile Include="source\GUI\properties\toolbar\clipboard_toolbar.cpp" />
+    <ClCompile Include="source\GUI\settings\SettingsDlg.cpp" />
+    <ClCompile Include="source\GUI\tabs\7xxx\7xxx_tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\7xxx\list\listparams.cpp" />
+    <ClCompile Include="source\GUI\tabs\calibration\calibration_tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\calibration\table\table.cpp" />
+    <ClCompile Include="source\gui\tabs\channel\channel_tab.cpp" />
+    <ClCompile Include="source\gui\tabs\common\common_tab.cpp" />
+    <ClCompile Include="source\gui\tabs\default_tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\description\description_tab.cpp" />
+    <ClCompile Include="source\gui\tabs\dig_port\digport_tab.cpp" />
+    <ClCompile Include="source\gui\tabs\frequency\frequency_tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\internal_DAC\InternalDACDC_Tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\internal_DAC\InternalDACPPS_Tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\internal_DAC\InternalDACSin_Tab.cpp" />
+    <ClCompile Include="source\gui\tabs\ip_address\ipaddress_tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\mseed_metadata\mseed_metadata_tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\registrator_zet048\registrator_zet048_tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\registrator_zsp\registrator_zsp_tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\selftest\selftest_tab.cpp" />
+    <ClCompile Include="source\GUI\tabs\standalone_registrator\SRChoiseProfDlg\SRChoiseProfDlg.cpp" />
+    <ClCompile Include="source\GUI\tabs\standalone_registrator\SRDataPropDlg\SRDataPropDlg.cpp" />
+    <ClCompile Include="source\GUI\tabs\standalone_registrator\SRWritePropDlg\SRWritePropDlg.cpp" />
+    <ClCompile Include="source\gui\tabs\sync\sync_tab.cpp" />
+    <ClCompile Include="source\gui\tabs\tabs.cpp" />
+    <ClCompile Include="source\gui\sensors\SensorsDlg.cpp" />
+    <ClCompile Include="source\GUI\tabs\zet037_tenso_channel\zet037_tenso_channel_tab.cpp" />
+    <ClCompile Include="source\GUI\tenso\tenso_dlg\tenso_dlg.cpp" />
+    <ClCompile Include="source\GUI\tenso\tenso_icp_dlg\tenso_icp_dlg.cpp" />
+    <ClCompile Include="source\GUI\waitForm\WaitFormDlg.cpp" />
+    <ClCompile Include="source\GUI\wizard\pages\reuse_page\reuse_page.cpp" />
+    <ClCompile Include="source\GUI\wizard\pages\start_page\start_page.cpp" />
+    <ClCompile Include="source\GUI\wizard\WizardSheet.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\application\application.cpp" />
+    <ClCompile Include="source\gui\main\main_dlg.cpp" />
+    <ClCompile Include="СTreeForCompare.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icons\ethernet-18-warning.ico" />
+    <Image Include="icons\ethernet-warning.ico" />
+    <Image Include="icons\usb-18-warning.ico" />
+    <Image Include="icons\usb-warning.ico" />
+    <Image Include="resource\icons\channel-charge-18.ico" />
+    <Image Include="resource\icons\channel-charge.ico" />
+    <Image Include="resource\icons\channel-service-18.ico" />
+    <Image Include="resource\icons\channel-service.ico" />
+    <Image Include="resource\icons\Connecting1-18.ico" />
+    <Image Include="resource\icons\Connecting1.ico" />
+    <Image Include="resource\icons\Connecting2-18.ico" />
+    <Image Include="resource\icons\Connecting2.ico" />
+    <Image Include="resource\icons\Connecting3-18.ico" />
+    <Image Include="resource\icons\Connecting3.ico" />
+    <Image Include="resource\icons\Connecting4-18.ico" />
+    <Image Include="resource\icons\Connecting4.ico" />
+    <Image Include="resource\icons\ethernet-18-warning.ico" />
+    <Image Include="resource\icons\ethernet-download-18.ico" />
+    <Image Include="resource\icons\ethernet-download.ico" />
+    <Image Include="resource\icons\ethernet-error-18.ico" />
+    <Image Include="resource\icons\ethernet-error.ico" />
+    <Image Include="resource\icons\ethernet-locked-18.ico" />
+    <Image Include="resource\icons\ethernet-locked.ico" />
+    <Image Include="resource\icons\ethernet-warning.ico" />
+    <Image Include="resource\icons\ethernetAccept-18.ico" />
+    <Image Include="resource\icons\ethernetAccept.ico" />
+    <Image Include="resource\icons\ethernetConnect-18.ico" />
+    <Image Include="resource\icons\ethernetConnect.ico" />
+    <Image Include="resource\icons\generator-on-18.ico" />
+    <Image Include="resource\icons\generator-on.ico" />
+    <Image Include="resource\icons\icon1.ico" />
+    <Image Include="resource\icons\icon2.ico" />
+    <Image Include="resource\icons\icon4.ico" />
+    <Image Include="resource\icons\icon5.ico" />
+    <Image Include="resource\icons\SD-18.ico" />
+    <Image Include="resource\icons\SD.ico" />
+    <Image Include="resource\icons\sr_copy_sd_to_trend.ico" />
+    <Image Include="resource\icons\tree.ico" />
+    <Image Include="resource\icons\usb-18-warning.ico" />
+    <Image Include="resource\icons\usb-warning.ico" />
+    <Image Include="resource\icons\zet030i.bmp" />
+    <Image Include="resource\icons\zet030p.bmp" />
+    <Image Include="resource\icons\zet037.bmp" />
+    <Image Include="resource\icons\zet048_e24.bmp" />
+    <Image Include="resource\icons\zet211.bmp" />
+    <Image Include="resource\icons\zet221.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties _x007B_5242B3CD-2FC2-4D53-80D8-8410FE2999AA_x007D_="horscale" _x007B_F563E0CD-C570-411B-BE7E-8C45A1702895_x007D_="server" RESOURCE_FILE="" _x007B_735C6A09-9364-496D-A87D-DC7050684531_x007D_="CGrid" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

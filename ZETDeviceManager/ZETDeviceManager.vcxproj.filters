@@ -1,0 +1,1405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{9df75ad6-025d-4f3f-8944-6bf5712eb2c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\application">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="source\gui">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="source\gui\main">
+      <UniqueIdentifier>{d0de56a0-dee4-4c88-8b29-fd3f019f1957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo">
+      <UniqueIdentifier>{75d0b97a-b112-4130-8537-06150933cfcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\crawler">
+      <UniqueIdentifier>{3f71ae41-c6fd-49ed-98bd-7d15ece8e6de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\7xxx">
+      <UniqueIdentifier>{f3f34ace-3c0c-4fe6-a1f0-f99419d9b140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\std">
+      <UniqueIdentifier>{b21392f4-62f6-4489-8280-cb85d25f295d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\std\crawler">
+      <UniqueIdentifier>{fee11615-271d-4f68-bda6-bf82d1e8b5cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\factory">
+      <UniqueIdentifier>{a6741945-ecde-405f-94a9-2a1e48d13fd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\object">
+      <UniqueIdentifier>{05db1b10-04d4-44ee-a8b0-7584dfe5c9e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\saver">
+      <UniqueIdentifier>{b29e0a4d-f15a-4a37-aa26-e3a3f6c3b39d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\std\device">
+      <UniqueIdentifier>{ce6b54a7-1611-49a4-b984-50c10c739037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\std\channel">
+      <UniqueIdentifier>{f0c1031d-174f-4bcd-9580-d29715e6fa5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\main\tree">
+      <UniqueIdentifier>{14287aac-983c-46cb-a451-3178be86cc80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\icons">
+      <UniqueIdentifier>{a7dec09e-8731-4c58-b8c3-f9a812d5325a}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp</Extensions>
+    </Filter>
+    <Filter Include="source\gui\properties">
+      <UniqueIdentifier>{394f1bcd-41d6-4f15-8261-723e7ee4d995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\path">
+      <UniqueIdentifier>{e910b297-80ba-44f5-8718-5586b2c2c228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\sensors">
+      <UniqueIdentifier>{67152f54-d4f7-4346-b6fd-0e89d367e54a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\sensors">
+      <UniqueIdentifier>{a950d1ae-d391-4411-9d33-d9eddd859e9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\listctrl">
+      <UniqueIdentifier>{f0de71db-298e-4f5e-939a-841caca49f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\std\device\blinker">
+      <UniqueIdentifier>{b712f793-dadc-4bce-90dd-0da6f9c9a32e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs">
+      <UniqueIdentifier>{58d4a83f-1a8c-4768-8a1c-8321d68c78fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\common">
+      <UniqueIdentifier>{8324b977-86df-451b-8828-1efb9c6d3b78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\frequency">
+      <UniqueIdentifier>{b11d5ef0-4342-42d1-9a43-5030c78cfdff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\dig_port">
+      <UniqueIdentifier>{63a36836-eaf4-4c3c-9d14-2f82d4af8cb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\ip_address">
+      <UniqueIdentifier>{7119374d-56d7-4a5e-8ee7-4d7f775d9771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\channel">
+      <UniqueIdentifier>{67670c33-485e-46b9-b521-5c6ec8df3f0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\sync">
+      <UniqueIdentifier>{7ddbbad3-4f19-4bf1-b0d8-38307ca28fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\memento">
+      <UniqueIdentifier>{983a726b-9d82-41e9-abb7-38f77fc39ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\main\list">
+      <UniqueIdentifier>{75326463-095d-45a9-9954-8d55c467809c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\7xxx\7xxx">
+      <UniqueIdentifier>{e0889161-dbc3-4ee6-9280-8432f81bfa73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\7xxx\7xxx\crawler">
+      <UniqueIdentifier>{61a9d8a1-cb80-491f-899f-ad49b8820769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\7xxx\7xxx\device">
+      <UniqueIdentifier>{20efc68a-078d-4a7f-9ad6-2fbf309d6af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\7xxx\7xxx\device\config">
+      <UniqueIdentifier>{3e49737c-47a7-49e3-87a2-0a68e51f4044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\7xxx">
+      <UniqueIdentifier>{ee76d3df-355c-483f-9074-37f578e33b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\7xxx\list">
+      <UniqueIdentifier>{b4308824-405d-4bb6-85d0-54a1965e1cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\main\main_toolbar">
+      <UniqueIdentifier>{536a1dbf-2cf3-4b93-8319-4cb084191dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\properties\toolbar">
+      <UniqueIdentifier>{cc810e55-f2f4-439e-a87f-62f4427dbd32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\dig_port\check_groupbox">
+      <UniqueIdentifier>{9a257b11-8652-4488-85b5-aa131917dfe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\wizard">
+      <UniqueIdentifier>{b10baeb7-30ad-4181-9be4-47a452d783b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\wizard\pages">
+      <UniqueIdentifier>{5bc8eb21-1e85-49d4-89ba-d667f8b4d323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\wizard\pages\start_page">
+      <UniqueIdentifier>{3a872bcf-853b-4358-ac85-3a7fee33e95a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\wizard\pages\reuse_page">
+      <UniqueIdentifier>{5e3a8732-3a8a-4249-83f5-3224e557cce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils">
+      <UniqueIdentifier>{e2ecb9c7-2a06-4708-adf0-ecb421a5eae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\align_value">
+      <UniqueIdentifier>{22d1439b-15e3-4169-afb0-e1a31a25f3f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\hex">
+      <UniqueIdentifier>{e07e8531-817b-4410-957e-a2cda956b2fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\settings">
+      <UniqueIdentifier>{220a7144-43a6-4427-beee-6e1e684c4a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\time_conv">
+      <UniqueIdentifier>{f1c71cde-c186-4234-916f-acf71c463002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\mac_conv">
+      <UniqueIdentifier>{731216f4-d728-4ab3-8b9e-c87ba65877c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\shield_access">
+      <UniqueIdentifier>{8fe19d20-7746-4f0f-9866-e40b9a88a666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\calibration">
+      <UniqueIdentifier>{eb227c91-e5bf-49d8-859d-06f7749a3ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\calibration\table">
+      <UniqueIdentifier>{3b0b1126-b4db-4361-8fc2-76c6770830c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\calibration\grid">
+      <UniqueIdentifier>{f5e0208a-4c27-4f6c-87b7-d0564a261052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\double_bubble_sort">
+      <UniqueIdentifier>{ed358c73-74c8-4280-9294-097d7aa92f5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\clipboard">
+      <UniqueIdentifier>{132645d7-2c71-4f5a-99cf-c2f276de92d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\calibration\grid_holder">
+      <UniqueIdentifier>{463ae917-44d2-4177-8a00-97b7fdcc752a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\standalone_registrator">
+      <UniqueIdentifier>{117f9fa9-fab0-42f9-bd31-c7a3b19558c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\standalone_registrator\SRWritePropDlg">
+      <UniqueIdentifier>{0572545d-933d-43a9-92e6-b6f975bc3457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\standalone_registrator\SRDataPropDlg">
+      <UniqueIdentifier>{8d84a76b-76c2-42cb-b5ba-f30ac7676843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\standalone_registrator\SRChoiceProfDlg">
+      <UniqueIdentifier>{47d4bbeb-e12b-4e5f-8a46-dd6669e3937c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\string_conv">
+      <UniqueIdentifier>{8ca58ac7-8044-48d0-bd88-4e0866f4f00b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\converter">
+      <UniqueIdentifier>{d1e67e8a-eac8-4f2d-8210-df5841b76bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\sync\grayable_groupbox">
+      <UniqueIdentifier>{f4b68985-42a4-48f4-99df-1f266d8a9946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\std\server">
+      <UniqueIdentifier>{c935deac-073e-457a-a114-c4fa79b5b61d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\registrator_zet048">
+      <UniqueIdentifier>{7e403d0c-49ce-4a47-814c-63c4279f467c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\progressctrlex">
+      <UniqueIdentifier>{17756b69-2e11-4355-9125-db9876d12e41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\bytes_conv">
+      <UniqueIdentifier>{6fb05bc6-e95a-4a67-8d72-ba9f96894eb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\internal_DAC">
+      <UniqueIdentifier>{7df1350b-a694-4a20-b655-bfab806c7933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\NumericEdit">
+      <UniqueIdentifier>{4e3eb064-f9e8-47fb-b286-987cb0369a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\internal_DAC\InternalDACSin_Tab">
+      <UniqueIdentifier>{bad190f0-cde9-4a87-8551-b8b2a7667d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\description">
+      <UniqueIdentifier>{35b4846e-a3fa-4d87-b03b-c432e3848651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\internal_DAC\InternalDACPPS_Tab">
+      <UniqueIdentifier>{3c0074e6-0947-4562-a973-7b5b55e12cae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\internal_DAC\InternalDACDC_Tab">
+      <UniqueIdentifier>{4eea7b7f-6345-4e20-9e19-217ab4590c1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\forcopyfromsdtopc">
+      <UniqueIdentifier>{7f177029-5f37-426e-b55a-0ba8a9e7c606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\bin">
+      <UniqueIdentifier>{7b36c25d-8e93-4221-a56f-59180b098b7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\actuator">
+      <UniqueIdentifier>{d9e37e34-f68d-4d80-8828-3dab1706bf54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\config">
+      <UniqueIdentifier>{717e17a3-02c1-4db1-bb80-293b0017c0dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\application\FuncForAll">
+      <UniqueIdentifier>{caaf5fa6-ce9e-4279-be74-832ea5c64204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\CFGWorker">
+      <UniqueIdentifier>{b08265a2-da13-47d9-a436-3b07776de6d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\CFGWorker\MyException">
+      <UniqueIdentifier>{068bb68a-0830-45dc-91c6-f2e32e324567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\CFGWorker\XMLWorker">
+      <UniqueIdentifier>{d485e87b-4401-408e-8eed-c7e5cbb938e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\treeForCompare">
+      <UniqueIdentifier>{5676cd46-aafc-461d-a458-50471ba48dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\treeForCompare\WndResizer">
+      <UniqueIdentifier>{2e2a6c4e-e889-487e-9de1-f7d8c7f0c6c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\CommonStructForCfg">
+      <UniqueIdentifier>{4c00749d-d361-44ed-8c20-4431432a819d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\teds">
+      <UniqueIdentifier>{3854963a-9986-488f-8f55-39f9e6c22878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\NamedPipeClient">
+      <UniqueIdentifier>{b0a334a2-bb2c-4fe1-9a1d-f0754bbdc0f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tenso">
+      <UniqueIdentifier>{cc954cdb-e261-432c-afbd-389123ad7986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\DataTime">
+      <UniqueIdentifier>{600b48fb-549f-47fc-8705-c1613cd58482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Thread">
+      <UniqueIdentifier>{943e6fca-5f28-4b4d-b21f-033b09d48cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\ActiveX">
+      <UniqueIdentifier>{bf62a844-ab56-4907-8146-e9a417c8ffcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\waitFormDlg">
+      <UniqueIdentifier>{73d472a0-ddf2-40ed-96fb-9aa3971a57d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tenso\tenso_dlg">
+      <UniqueIdentifier>{b1ec5549-1514-4423-9f82-99bcebda5fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tenso\tenso_icp_settings_dlg">
+      <UniqueIdentifier>{e2d12393-1cc5-46f9-97d4-2c9e18c80291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\std\sd">
+      <UniqueIdentifier>{271a0da6-d238-4d2e-8a8d-996651f02eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\7xxx\7xxx\device\stream_data_work">
+      <UniqueIdentifier>{f4552122-d0df-4c90-8768-b5403d86e01b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\base64">
+      <UniqueIdentifier>{481aa843-50eb-413b-8156-63226ad38e25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\md5">
+      <UniqueIdentifier>{a6180e12-8a6a-4fac-91a3-1e3aaf45dc66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\recorder">
+      <UniqueIdentifier>{4b943d81-1ba9-4bc3-ada7-c4e9a3e7662b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\zsp_dev_detect">
+      <UniqueIdentifier>{cb5d727c-a201-4a60-9997-dd09cf9b0e0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\zsp_factory">
+      <UniqueIdentifier>{518d9a16-926f-4c77-a10a-95a203ba91e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\zsp_factory\zsp_config">
+      <UniqueIdentifier>{2bc95d98-a5d2-4215-a464-632a04ba5007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\pair_hash">
+      <UniqueIdentifier>{6efc5cef-93b1-4be6-bfa4-bf2df9db2ca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\zsp_factory\zsp_config\zsp_device">
+      <UniqueIdentifier>{7f56ce39-2ee2-497d-9dbb-dcd5e17ef5f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\zsp_factory\zsp_config\zsp_channel">
+      <UniqueIdentifier>{3b061271-7685-4e8a-935e-e8c0fa4a9706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\zsp_factory\zsp_config\zsp_state">
+      <UniqueIdentifier>{0c0e3d3a-2374-4fe1-a84f-75b73fa40c29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="precompiller">
+      <UniqueIdentifier>{2c03c13f-fabb-44a6-8d69-7597d7676e30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\bmp">
+      <UniqueIdentifier>{8f27e320-496c-42bf-8182-266bf529f414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\registrator_zsp">
+      <UniqueIdentifier>{5eb79b9d-3e50-473d-ad3a-466f870bf269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\selftest">
+      <UniqueIdentifier>{21d84056-3e0a-48ba-99f3-c88e7d9f7be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\utils\zet139_dev_detect">
+      <UniqueIdentifier>{01ceca70-d2e7-4458-880b-0b6fba95fa2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\zet037_tenso_channel">
+      <UniqueIdentifier>{9bce406e-eb6a-4485-82dd-e6fe78182d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\horscale">
+      <UniqueIdentifier>{31915d62-461c-452b-98f1-54997dc52b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\algo\zsp_factory\zsp_config\zsp_metadata">
+      <UniqueIdentifier>{4c8fd225-8006-4189-acda-f489f9ab68d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\gui\tabs\mseed_metadata">
+      <UniqueIdentifier>{9ac14e8b-c2e9-4f0d-ac28-1e5840b81345}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons\7xxx.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\main.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\sensors.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\channel-enabled.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\channel-disabled.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\blinked-on.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\blinked-off.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\channel-icp.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\save.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\help.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\detail.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\7xxx-18.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\blinked-off-18.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\blinked-on-18.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\usb.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\pci.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\ethernet.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\channel-disabled-18.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\channel-enabled-18.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\ethernet-18.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\channel-icp-18.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\usb-18.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\pci-18.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\demo.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\demo-18.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\clipboard-paste.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\clipboard-copy.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\batch.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\wizard.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\refresh.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\lock.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\properties.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\sr_sync.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\sr_copy_pc_to_sd.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\sr_copy_sd_to_pc.ico">
+      <Filter>resource\icons</Filter>
+    </None>
+    <None Include="resource\icons\clipboard_toolbar.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\demo.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\main_toolbar.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\srAddStartTime.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\srClearStartTime.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\zet_controller.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\zet_sensor.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\zet017_u2.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\zet017_u8.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\zet110.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\zet210.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\zet220.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\zet230.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+    <None Include="resource\icons\zet240.bmp">
+      <Filter>resource\bmp</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>precompiller</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>precompiller</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\crawler\crawler.hpp">
+      <Filter>source\algo\crawler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\std\crawler\crawler_std.hpp">
+      <Filter>source\algo\std\crawler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\crawler\crawler_interface.hpp">
+      <Filter>source\algo\crawler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\types.hpp">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\factory\factory.hpp">
+      <Filter>source\algo\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\object\object.hpp">
+      <Filter>source\algo\object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\saver\saver.hpp">
+      <Filter>source\algo\saver</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\object\object_type.hpp">
+      <Filter>source\algo\object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\std\channel\channel.hpp">
+      <Filter>source\algo\std\channel</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\main\tree\tree.h">
+      <Filter>source\gui\main\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\std\device\device_std.hpp">
+      <Filter>source\algo\std\device</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\path\path.h">
+      <Filter>source\algo\path</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\sensors\sensors.hpp">
+      <Filter>source\algo\sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\sensors\SensorsDlg.h">
+      <Filter>source\gui\sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\listctrl\listsensors.h">
+      <Filter>source\gui\listctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\std\device\blinker\blinker.hpp">
+      <Filter>source\algo\std\device\blinker</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\tabs\tabs.h">
+      <Filter>source\gui\tabs</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\tabs\default_tab.h">
+      <Filter>source\gui\tabs</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\tabs\sync\sync_tab.h">
+      <Filter>source\gui\tabs\sync</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\tabs\ip_address\ipaddress_tab.h">
+      <Filter>source\gui\tabs\ip_address</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\tabs\frequency\frequency_tab.h">
+      <Filter>source\gui\tabs\frequency</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\tabs\dig_port\digport_tab.h">
+      <Filter>source\gui\tabs\dig_port</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\tabs\common\common_tab.h">
+      <Filter>source\gui\tabs\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\tabs\channel\channel_tab.h">
+      <Filter>source\gui\tabs\channel</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\memento\memento.hpp">
+      <Filter>source\algo\memento</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\7xxx\7xxx\crawler\crawler_7xxx.hpp">
+      <Filter>source\algo\7xxx\7xxx\crawler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\7xxx\7xxx\device\device_7xxx.hpp">
+      <Filter>source\algo\7xxx\7xxx\device</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\7xxx\7xxx\device\config\config_7xxx.hpp">
+      <Filter>source\algo\7xxx\7xxx\device\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\7xxx\7xxx_tab.h">
+      <Filter>source\gui\tabs\7xxx</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\7xxx\list\listparams.h">
+      <Filter>source\gui\tabs\7xxx\list</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\main\toolbar\main_toolbar.h">
+      <Filter>source\gui\main\main_toolbar</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\properties\toolbar\clipboard_toolbar.h">
+      <Filter>source\gui\properties\toolbar</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\dig_port\check_groupbox\check_groupbox.h">
+      <Filter>source\gui\tabs\dig_port\check_groupbox</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\wizard\WizardSheet.h">
+      <Filter>source\gui\wizard</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\wizard\pages\start_page\start_page.h">
+      <Filter>source\gui\wizard\pages\start_page</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\wizard\pages\reuse_page\reuse_page.h">
+      <Filter>source\gui\wizard\pages\reuse_page</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\align_value\align_value.hpp">
+      <Filter>source\algo\utils\align_value</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\hex\hex.hpp">
+      <Filter>source\algo\utils\hex</Filter>
+    </ClInclude>
+    <ClInclude Include="resource\resource.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\settings\SettingsDlg.h">
+      <Filter>source\gui\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\time_conv\time_conv.hpp">
+      <Filter>source\algo\utils\time_conv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\mac_conv\mac_conv.hpp">
+      <Filter>source\algo\utils\mac_conv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\shield_access\shield_access.hpp">
+      <Filter>source\algo\utils\shield_access</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\calibration\calibration_tab.h">
+      <Filter>source\gui\tabs\calibration</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\calibration\table\table.h">
+      <Filter>source\gui\tabs\calibration\table</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\horscale\horscale.h">
+      <Filter>source\gui\tabs\horscale</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\calibration\grid\grid.h">
+      <Filter>source\gui\tabs\calibration\grid</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\double_bubble_sort\double_bubble_sort.hpp">
+      <Filter>source\algo\utils\double_bubble_sort</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\clipboard\clipboard.hpp">
+      <Filter>source\algo\utils\clipboard</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\calibration\grid_holder\grid_holder.h">
+      <Filter>source\gui\tabs\calibration\grid_holder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\application\application.h">
+      <Filter>source\application</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\main\main_dlg.h">
+      <Filter>source\gui\main</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\user_messages.hpp">
+      <Filter>source\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\standalone_registrator\SRWritePropDlg\SRWritePropDlg.h">
+      <Filter>source\gui\tabs\standalone_registrator\SRWritePropDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\standalone_registrator\SRDataPropDlg\SRDataPropDlg.h">
+      <Filter>source\gui\tabs\standalone_registrator\SRDataPropDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\standalone_registrator\SRChoiseProfDlg\SRChoiseProfDlg.h">
+      <Filter>source\gui\tabs\standalone_registrator\SRChoiceProfDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\standalone_registrator\stanRegDeviceParam.h">
+      <Filter>source\gui\tabs\standalone_registrator</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\string_conv\string_conv.hpp">
+      <Filter>source\algo\utils\string_conv</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)WaterMark\MappingOpener.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)WaterMark\WMAligner.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)WaterMark\WMInfo.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)WaterMark\WaterMarkFloat.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)WaterMark\WatermarkInt.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)WaterMark\CRC.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\Channel.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\CommonWriter.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\DescriptorFileHelper.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\DriveChecker.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\SingleTrendWriter.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\SingleWriter.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\StreamTrendWriter.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\TrendWriter.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\FileHelper.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)TrendWriter\DeviceInfoParcer.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetHeadersDir)CALIBR.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetHeadersDir)NEW_CHREC.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetLibsDir)ZETFile\include\ZETFile.h">
+      <Filter>source\algo\converter</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\forcopyfromsdtopc\COMMAND_INFO_USB.h">
+      <Filter>source\algo\forcopyfromsdtopc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\forcopyfromsdtopc\FileHandler.h">
+      <Filter>source\algo\forcopyfromsdtopc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\forcopyfromsdtopc\FlashFileInfo.h">
+      <Filter>source\algo\forcopyfromsdtopc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\forcopyfromsdtopc\NewStruct.h">
+      <Filter>source\algo\forcopyfromsdtopc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\forcopyfromsdtopc\OldWMInfo.h">
+      <Filter>source\algo\forcopyfromsdtopc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\sync\grayable_groupbox\grayable_groupbox.h">
+      <Filter>source\gui\tabs\sync\grayable_groupbox</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)ZETView_basic_class\CDSRV.h">
+      <Filter>source\algo\std\server</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)Dialog_ZET\Translate.h">
+      <Filter>source\algo\utils\string_conv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\registrator_zet048\registrator_zet048_tab.h">
+      <Filter>source\gui\tabs\registrator_zet048</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\progressctrlex\ProgressCtrlEx.h">
+      <Filter>source\gui\progressctrlex</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\bytes_conv\bytes_conv.hpp">
+      <Filter>source\algo\utils\bytes_conv</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)Controls\SpinEdit\SpinEdit.h">
+      <Filter>source\gui\NumericEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)Controls\CEditBase\CEditBase.h">
+      <Filter>source\gui\NumericEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\internal_DAC\InternalDACSin_Tab.h">
+      <Filter>source\gui\tabs\internal_DAC\InternalDACSin_Tab</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\description\description_tab.h">
+      <Filter>source\gui\tabs\description</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\internal_DAC\InternalDACPPS_Tab.h">
+      <Filter>source\gui\tabs\internal_DAC\InternalDACPPS_Tab</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\internal_DAC\InternalDACDC_Tab.h">
+      <Filter>source\gui\tabs\internal_DAC\InternalDACDC_Tab</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\bin\bin.hpp">
+      <Filter>source\algo\utils\bin</Filter>
+    </ClInclude>
+    <ClInclude Include="source\gui\main\list\list.h">
+      <Filter>source\gui\main\list</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)Dialog_ZET\OnHelp.h">
+      <Filter>source\application</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)Dialog_ZET\CDZetPath.h">
+      <Filter>source\application</Filter>
+    </ClInclude>
+    <ClInclude Include="resource\Phrases.h">
+      <Filter>source\algo\utils\string_conv</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\actuator\actuator_tab.h">
+      <Filter>source\gui\tabs\actuator</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\config\ConfigDlg.h">
+      <Filter>source\gui\config</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)FunctionApplication\FunctionApplication.h">
+      <Filter>source\application</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)Common_exe_ocx\FunctionForAll.h">
+      <Filter>source\application\FuncForAll</Filter>
+    </ClInclude>
+    <ClInclude Include="CFGWorker.h">
+      <Filter>source\CFGWorker</Filter>
+    </ClInclude>
+    <ClInclude Include="MyException.h">
+      <Filter>source\CFGWorker\MyException</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)7xxxXmlWorker\XMLWorker.h">
+      <Filter>source\CFGWorker\XMLWorker</Filter>
+    </ClInclude>
+    <ClInclude Include="СTreeForCompare.h">
+      <Filter>source\gui\treeForCompare</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)WndResizer\WndResizer.h">
+      <Filter>source\gui\treeForCompare\WndResizer</Filter>
+    </ClInclude>
+    <ClInclude Include="StructForCfgFile.h">
+      <Filter>source\CommonStructForCfg</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\teds\teds.h">
+      <Filter>source\algo\utils\teds</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)NamedPipes\Client\zetPipeClient.h">
+      <Filter>source\gui\NamedPipeClient</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)Dialog_ZET\DataTime.h">
+      <Filter>source\DataTime</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)ZetThread\CustomThreadSRV.h">
+      <Filter>source\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)ZetThread\CustomZetThread.h">
+      <Filter>source\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)ZetThread\ThreadSRVmultiSelfS.h">
+      <Filter>source\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)Grafic1\gdiplustextdispctrl1.h">
+      <Filter>source\ActiveX</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\waitForm\WaitFormDlg.h">
+      <Filter>source\gui\waitFormDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tenso\tenso_dlg\tenso_dlg.h">
+      <Filter>source\gui\tenso\tenso_dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tenso\tenso_icp_dlg\tenso_icp_dlg.h">
+      <Filter>source\gui\tenso\tenso_icp_settings_dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\std\sd\sd_std.hpp">
+      <Filter>source\algo\std\sd</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\7xxx\7xxx\device\stream_data_work\stream_data_worker.h">
+      <Filter>source\algo\7xxx\7xxx\device\stream_data_work</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\base64\base64.hpp">
+      <Filter>source\algo\utils\base64</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ZetToolsDir)md5\md5.h">
+      <Filter>source\algo\utils\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\md5\md5.hpp">
+      <Filter>source\algo\utils\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\recorder\recorder.hpp">
+      <Filter>source\algo\utils\recorder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\zsp_dev_detect\zsp_dev_detect.hpp">
+      <Filter>source\algo\utils\zsp_dev_detect</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\zsp_factory\zsp_factory.h">
+      <Filter>source\algo\zsp_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\zsp_factory\zsp_config\zsp_config.h">
+      <Filter>source\algo\zsp_factory\zsp_config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\zsp_factory\zsp_common.hpp">
+      <Filter>source\algo\zsp_factory</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\pair_hash\pair_hash.hpp">
+      <Filter>source\algo\utils\pair_hash</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\zsp_factory\zsp_config\zsp_device\zsp_device.h">
+      <Filter>source\algo\zsp_factory\zsp_config\zsp_device</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\zsp_factory\zsp_config\zsp_channel\zsp_channel.h">
+      <Filter>source\algo\zsp_factory\zsp_config\zsp_channel</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\zsp_factory\zsp_config\zsp_state\zsp_state.h">
+      <Filter>source\algo\zsp_factory\zsp_config\zsp_state</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\registrator_zsp\registrator_zsp_tab.h">
+      <Filter>source\gui\tabs\registrator_zsp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\selftest\selftest_tab.h">
+      <Filter>source\gui\tabs\selftest</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\utils\zet139_dev_detect\zet139_dev_detect.hpp">
+      <Filter>source\algo\utils\zet139_dev_detect</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\zet037_tenso_channel\zet037_tenso_channel_tab.h">
+      <Filter>source\gui\tabs\zet037_tenso_channel</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\properties\properties_dlg_base.h">
+      <Filter>source\gui\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\properties\properties_dlg_common.h">
+      <Filter>source\gui\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\properties\properties_dlg_zet037.h">
+      <Filter>source\gui\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="source\algo\zsp_factory\zsp_config\zsp_metadata\zsp_metadata.h">
+      <Filter>source\algo\zsp_factory\zsp_config\zsp_metadata</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GUI\tabs\mseed_metadata\mseed_metadata_tab.h">
+      <Filter>source\gui\tabs\mseed_metadata</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>precompiller</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\crawler\crawler.cpp">
+      <Filter>source\algo\crawler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\std\crawler\crawler_std.cpp">
+      <Filter>source\algo\std\crawler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\factory\factory.cpp">
+      <Filter>source\algo\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\object\object.cpp">
+      <Filter>source\algo\object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\saver\saver.cpp">
+      <Filter>source\algo\saver</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\main\tree\tree.cpp">
+      <Filter>source\gui\main\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\std\device\device_std.cpp">
+      <Filter>source\algo\std\device</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\path\path.cpp">
+      <Filter>source\algo\path</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\sensors\sensors.cpp">
+      <Filter>source\algo\sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\sensors\SensorsDlg.cpp">
+      <Filter>source\gui\sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\std\device\blinker\blinker.cpp">
+      <Filter>source\algo\std\device\blinker</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\tabs\tabs.cpp">
+      <Filter>source\gui\tabs</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\tabs\default_tab.cpp">
+      <Filter>source\gui\tabs</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\tabs\sync\sync_tab.cpp">
+      <Filter>source\gui\tabs\sync</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\tabs\ip_address\ipaddress_tab.cpp">
+      <Filter>source\gui\tabs\ip_address</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\tabs\frequency\frequency_tab.cpp">
+      <Filter>source\gui\tabs\frequency</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\tabs\dig_port\digport_tab.cpp">
+      <Filter>source\gui\tabs\dig_port</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\tabs\common\common_tab.cpp">
+      <Filter>source\gui\tabs\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\tabs\channel\channel_tab.cpp">
+      <Filter>source\gui\tabs\channel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\main\list\list.cpp">
+      <Filter>source\gui\main\list</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\7xxx\7xxx\crawler\crawler_7xxx.cpp">
+      <Filter>source\algo\7xxx\7xxx\crawler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\7xxx\7xxx\device\device_7xxx.cpp">
+      <Filter>source\algo\7xxx\7xxx\device</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\7xxx\7xxx\device\config\config_7xxx.cpp">
+      <Filter>source\algo\7xxx\7xxx\device\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\7xxx\7xxx_tab.cpp">
+      <Filter>source\gui\tabs\7xxx</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\7xxx\list\listparams.cpp">
+      <Filter>source\gui\tabs\7xxx\list</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\main\toolbar\main_toolbar.cpp">
+      <Filter>source\gui\main\main_toolbar</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\properties\toolbar\clipboard_toolbar.cpp">
+      <Filter>source\gui\properties\toolbar</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\wizard\WizardSheet.cpp">
+      <Filter>source\gui\wizard</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\wizard\pages\start_page\start_page.cpp">
+      <Filter>source\gui\wizard\pages\start_page</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\wizard\pages\reuse_page\reuse_page.cpp">
+      <Filter>source\gui\wizard\pages\reuse_page</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\settings\SettingsDlg.cpp">
+      <Filter>source\gui\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\calibration\calibration_tab.cpp">
+      <Filter>source\gui\tabs\calibration</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\calibration\table\table.cpp">
+      <Filter>source\gui\tabs\calibration\table</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\horscale\horscale.cpp">
+      <Filter>source\gui\tabs\horscale</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\calibration\grid\grid.cpp">
+      <Filter>source\gui\tabs\calibration\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="source\application\application.cpp">
+      <Filter>source\application</Filter>
+    </ClCompile>
+    <ClCompile Include="source\gui\main\main_dlg.cpp">
+      <Filter>source\gui\main</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\standalone_registrator\SRWritePropDlg\SRWritePropDlg.cpp">
+      <Filter>source\gui\tabs\standalone_registrator\SRWritePropDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\standalone_registrator\SRDataPropDlg\SRDataPropDlg.cpp">
+      <Filter>source\gui\tabs\standalone_registrator\SRDataPropDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\standalone_registrator\SRChoiseProfDlg\SRChoiseProfDlg.cpp">
+      <Filter>source\gui\tabs\standalone_registrator\SRChoiceProfDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)WaterMark\WaterMarkFloat.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)WaterMark\WatermarkInt.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)WaterMark\CRC.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\CommonWriter.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\DescriptorFileHelper.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\DriveChecker.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\SingleTrendWriter.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\SingleWriter.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\StreamTrendWriter.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\TrendWriter.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\DeviceInfoParcer.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\FileHelper.cpp">
+      <Filter>source\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)TrendWriter\Channel.cpp">
+      <Filter>source\algo\converter</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\std\channel\chan.cpp">
+      <Filter>source\algo\std\channel</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)ZETView_basic_class\CDSRV.cpp">
+      <Filter>source\algo\std\server</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)Dialog_ZET\Translate.cpp">
+      <Filter>source\algo\utils\string_conv</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\registrator_zet048\registrator_zet048_tab.cpp">
+      <Filter>source\gui\tabs\registrator_zet048</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\progressctrlex\ProgressCtrlEx.cpp">
+      <Filter>source\gui\progressctrlex</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)Controls\SpinEdit\SpinEdit.cpp">
+      <Filter>source\gui\NumericEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)Controls\CEditBase\CEditBase.cpp">
+      <Filter>source\gui\NumericEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\internal_DAC\InternalDACSin_Tab.cpp">
+      <Filter>source\gui\tabs\internal_DAC\InternalDACSin_Tab</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\description\description_tab.cpp">
+      <Filter>source\gui\tabs\description</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\internal_DAC\InternalDACPPS_Tab.cpp">
+      <Filter>source\gui\tabs\internal_DAC\InternalDACPPS_Tab</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\internal_DAC\InternalDACDC_Tab.cpp">
+      <Filter>source\gui\tabs\internal_DAC\InternalDACDC_Tab</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)Dialog_ZET\CDZetPath.cpp">
+      <Filter>source\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)Dialog_ZET\OnHelp.cpp">
+      <Filter>source\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\actuator\actuator_tab.cpp">
+      <Filter>source\gui\tabs\actuator</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\config\ConfigDlg.cpp">
+      <Filter>source\gui\config</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)FunctionApplication\FunctionApplication.cpp">
+      <Filter>source\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="CFGWorker.cpp">
+      <Filter>source\CFGWorker</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)7xxxXmlWorker\XMLWorker.cpp">
+      <Filter>source\CFGWorker\XMLWorker</Filter>
+    </ClCompile>
+    <ClCompile Include="СTreeForCompare.cpp">
+      <Filter>source\gui\treeForCompare</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)WndResizer\WndResizer.cpp">
+      <Filter>source\gui\treeForCompare\WndResizer</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)Common_exe_ocx\FunctionForAll.cpp">
+      <Filter>source\application\FuncForAll</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\utils\teds\teds.cpp">
+      <Filter>source\algo\utils\teds</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)NamedPipes\Client\ZETPipeClient.cpp">
+      <Filter>source\gui\NamedPipeClient</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)Dialog_ZET\DataTime.cpp">
+      <Filter>source\DataTime</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)ZetThread\CustomThreadSRV.cpp">
+      <Filter>source\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)ZetThread\CustomZetThread.cpp">
+      <Filter>source\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)ZetThread\ThreadSRVmultiSelfS.cpp">
+      <Filter>source\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)Grafic1\gdiplustextdispctrl1.cpp">
+      <Filter>source\ActiveX</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\waitForm\WaitFormDlg.cpp">
+      <Filter>source\gui\waitFormDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tenso\tenso_dlg\tenso_dlg.cpp">
+      <Filter>source\gui\tenso\tenso_dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tenso\tenso_icp_dlg\tenso_icp_dlg.cpp">
+      <Filter>source\gui\tenso\tenso_icp_settings_dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\std\sd\sd_std.cpp">
+      <Filter>source\algo\std\sd</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\7xxx\7xxx\device\stream_data_work\stream_data_worker.cpp">
+      <Filter>source\algo\7xxx\7xxx\device\stream_data_work</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ZetToolsDir)md5\md5.c">
+      <Filter>source\algo\utils\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\zsp_factory\zsp_factory.cpp">
+      <Filter>source\algo\zsp_factory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\zsp_factory\zsp_config\zsp_config.cpp">
+      <Filter>source\algo\zsp_factory\zsp_config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\zsp_factory\zsp_config\zsp_device\zsp_device.cpp">
+      <Filter>source\algo\zsp_factory\zsp_config\zsp_device</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\zsp_factory\zsp_config\zsp_channel\zsp_channel.cpp">
+      <Filter>source\algo\zsp_factory\zsp_config\zsp_channel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\zsp_factory\zsp_config\zsp_state\zsp_state.cpp">
+      <Filter>source\algo\zsp_factory\zsp_config\zsp_state</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\registrator_zsp\registrator_zsp_tab.cpp">
+      <Filter>source\gui\tabs\registrator_zsp</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\selftest\selftest_tab.cpp">
+      <Filter>source\gui\tabs\selftest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\zet037_tenso_channel\zet037_tenso_channel_tab.cpp">
+      <Filter>source\gui\tabs\zet037_tenso_channel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\properties\properties_dlg_base.cpp">
+      <Filter>source\gui\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\properties\properties_dlg_common.cpp">
+      <Filter>source\gui\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\properties\properties_dlg_zet037.cpp">
+      <Filter>source\gui\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="source\algo\zsp_factory\zsp_config\zsp_metadata\zsp_metadata.cpp">
+      <Filter>source\algo\zsp_factory\zsp_config\zsp_metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GUI\tabs\mseed_metadata\mseed_metadata_tab.cpp">
+      <Filter>source\gui\tabs\mseed_metadata</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\resource.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\icons\icon1.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\sr_copy_sd_to_trend.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\sr_copy_sd_to_trend.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernet-locked.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernet-locked-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernet-error.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernet-error-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\channel-charge.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\channel-charge-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\generator-on.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\generator-on.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\generator-on-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\generator-on-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\SD-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\SD.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\SD.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\SD-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\Connecting1.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\Connecting2.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\Connecting3.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\Connecting4.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\Connecting1-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\Connecting2-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\Connecting3-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\Connecting4-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernetConnect.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernetConnect-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernetAccept.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernetAccept-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\channel-service.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\channel-service-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="icons\ethernet-18-warning.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernet-18-warning.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernet-download.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernet-download-18.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="icons\ethernet-warning.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\ethernet-warning.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\icon2.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\icon4.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\icon5.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\tree.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\usb-18-warning.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="icons\usb-18-warning.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="icons\usb-warning.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\usb-warning.ico">
+      <Filter>resource\icons</Filter>
+    </Image>
+    <Image Include="resource\icons\zet030i.bmp">
+      <Filter>resource\bmp</Filter>
+    </Image>
+    <Image Include="resource\icons\zet030p.bmp">
+      <Filter>resource\bmp</Filter>
+    </Image>
+    <Image Include="resource\icons\zet037.bmp">
+      <Filter>resource\bmp</Filter>
+    </Image>
+    <Image Include="resource\icons\zet211.bmp">
+      <Filter>resource\bmp</Filter>
+    </Image>
+    <Image Include="resource\icons\zet048_e24.bmp">
+      <Filter>resource\bmp</Filter>
+    </Image>
+    <Image Include="resource\icons\zet221.bmp">
+      <Filter>resource</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
